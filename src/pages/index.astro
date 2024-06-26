@@ -2,12 +2,20 @@
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
+import Top from "../components/TopBanner.astro";
+import Hero from "../components/Hero.astro";
 ---
 
-<h1 class="w-full p-16 bg-blue-900 text-white">
-  Welcome to Celestial Horizons
-</h1>
-<Navigation />
-<div>
-  <Card title="Welcome Aboard" body="Card Body" href="#" />
-</div>>
+<Layout title="Celestial Horizons">
+  <Top />
+  <h1 class="w-full p-16 bg-blue-900 text-white">
+    Welcome to Celestial Horizons
+  </h1>
+  <Navigation />
+  <Hero />
+  <div>
+    <Card title="Welcome Aboard" body="Card Body" href="#" />
+  </div>
+  <Footer />
+</Layout>
